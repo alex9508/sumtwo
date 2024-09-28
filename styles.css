@@ -83,6 +83,14 @@ button {
     color: red;
 }
 
+/* Evitar la selección de emojis */
+#emojis p {
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .container {
