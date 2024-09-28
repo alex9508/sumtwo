@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Sumas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Sumas</h1>
+        <p id="sum"></p>
+        <div id="emojis"></div> <!-- Contenedor para los emojis -->
+        <input type="number" id="answer" placeholder="Ingresa tu respuesta">
+        <button onclick="checkAnswer()">Enviar</button>
+        <p id="feedback"></p>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Incorrecto. La respuesta correcta es:</p>
+            <p id="correct-answer" class="correct-answer"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
